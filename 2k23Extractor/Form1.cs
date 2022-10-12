@@ -288,10 +288,10 @@ namespace _2k23Extractor
                 //Create teams by clearing the team list, designating Home/Away, and supplying the pointer for Number of Players, and Pointer for the starting Center
                 //Adding Away team first so that we can loop through the teams without worrying about Home/Away because Away is always shown first
                 _game.Teams.Clear();
-                
+
                 //                               Score                   OnFloor                 Team Name               Def Settings
-                _game.Teams.Add(new Team("Away", 0x7250224, _baseAddress + 0x5CD40E8, _baseAddress + 0x6C5EF4C, _baseAddress + 0x5163A5C));
-                _game.Teams.Add(new Team("Home", 0x724FB54, _baseAddress + 0x5CD4110, _baseAddress + 0x6C5DCF4, _baseAddress + 0x6288548));
+                _game.Teams.Add(new Team("Away", 0x7255374, _baseAddress + 0x5CD9278, _baseAddress + 0x6C640CC, _baseAddress + 0x5163A5C));
+                _game.Teams.Add(new Team("Home", 0x7254CA4, _baseAddress + 0x5CD92A0, _baseAddress + 0x6C62E74, _baseAddress + 0x6288548));
 
                 foreach (var team in _game.Teams)
                 {
